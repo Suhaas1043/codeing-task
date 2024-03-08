@@ -2,13 +2,13 @@ import json
 
 def load_data():
     try:
-        with open('Yash.expense', 'r') as file:
+        with open('Suhas.expense', 'r') as file:
             return json.load(file)
     except FileNotFoundError:
         return {'income': 0, 'expenses': []}
 
 def save_data(data):
-    with open('Yash.expense', 'w') as file:
+    with open('Suhas.expense', 'w') as file:
         json.dump(data, file)
 
 def add_income(data):
